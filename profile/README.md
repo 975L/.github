@@ -12,7 +12,7 @@ Maintained by [Laurent Marquet](https://github.com/LaurentMarquet) · PHP 8 · S
 |---|---|---|---|
 | <img src="images/ConfigBundle.svg" alt="" width="80"> | [ConfigBundle](https://github.com/975L/ConfigBundle) <br> `c975l/config-bundle` | Database-backed application configuration (`site_config`), the shared `/management` dashboard, health check, backup, sitemaps | UiBundle |
 | <img src="images/UiBundle.svg" alt="" width="80"> | [UiBundle](https://github.com/975L/UiBundle) <br> `c975l/ui-bundle` | Composable page Blocks, media library, database-driven forms, email templates, shared CSS/JS | ConfigBundle |
-| <img src="images/SiteBundle.svg" alt="" width="80"> | [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — layout, pages, SEO, menus, users, legal pages | Config, Ui, Social |
+| <img src="images/SiteBundle.svg" alt="" width="80"> | [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — layout, pages, SEO, menus, users, legal pages | Config, Ui |
 | <img src="images/ShopBundle.svg" alt="" width="80"> | [ShopBundle](https://github.com/975L/ShopBundle) <br> `c975l/shop-bundle` | E-commerce — product catalog, checkout | Config, Ui, Payment |
 | <img src="images/PaymentBundle.svg" alt="" width="80"> | [PaymentBundle](https://github.com/975L/PaymentBundle) <br> `c975l/payment-bundle` | Generic basket/checkout engine and Stripe payments | Config, Ui |
 | <img src="images/CrowdfundingBundle.svg" alt="" width="80"> | [CrowdfundingBundle](https://github.com/975L/CrowdfundingBundle) <br> `c975l/crowdfunding-bundle` | Crowdfunding campaigns — counterparts, contributors, news and media — plus a lottery, checking out through PaymentBundle | Config, Ui, Payment |
