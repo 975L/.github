@@ -8,16 +8,16 @@ Maintained by [Laurent Marquet](https://github.com/LaurentMarquet) · PHP 8 · S
 
 ## The bundles
 
-| Bundle | What it does | Requires |
-|---|---|---|
-| [ConfigBundle](https://github.com/975L/ConfigBundle) <br> `c975l/config-bundle` | Database-backed application configuration (`site_config`), the shared `/management` dashboard, health check, backup, sitemaps | UiBundle |
-| [UiBundle](https://github.com/975L/UiBundle) <br> `c975l/ui-bundle` | Composable page Blocks, media library, database-driven forms, email templates, shared CSS/JS | ConfigBundle |
-| [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — layout, pages, SEO, menus, users, legal pages | Config, Ui, Social |
-| [ShopBundle](https://github.com/975L/ShopBundle) <br> `c975l/shop-bundle` | E-commerce — product catalog, checkout | Config, Ui, Payment |
-| [PaymentBundle](https://github.com/975L/PaymentBundle) <br> `c975l/payment-bundle` | Generic basket/checkout engine and Stripe payments | Config, Ui |
-| [BookBundle](https://github.com/975L/BookBundle) <br> `c975l/book-bundle` | Books and series catalog for a publishing site | Config, Ui |
-| [GalleryBundle](https://github.com/975L/GalleryBundle) <br> `c975l/gallery-bundle` | Photo galleries — categories, batch upload, derivatives | Config, Ui |
-| [SocialBundle](https://github.com/975L/SocialBundle) <br> `c975l/social-bundle` | Social links and share buttons | Config, Ui |
+| | Bundle | What it does | Requires |
+|---|---|---|---|
+| <img src="images/ConfigBundle.svg" alt="" width="80"> | [ConfigBundle](https://github.com/975L/ConfigBundle) <br> `c975l/config-bundle` | Database-backed application configuration (`site_config`), the shared `/management` dashboard, health check, backup, sitemaps | UiBundle |
+| <img src="images/UiBundle.svg" alt="" width="80"> | [UiBundle](https://github.com/975L/UiBundle) <br> `c975l/ui-bundle` | Composable page Blocks, media library, database-driven forms, email templates, shared CSS/JS | ConfigBundle |
+| <img src="images/SiteBundle.svg" alt="" width="80"> | [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — layout, pages, SEO, menus, users, legal pages | Config, Ui, Social |
+| <img src="images/ShopBundle.svg" alt="" width="80"> | [ShopBundle](https://github.com/975L/ShopBundle) <br> `c975l/shop-bundle` | E-commerce — product catalog, checkout | Config, Ui, Payment |
+| <img src="images/PaymentBundle.svg" alt="" width="80"> | [PaymentBundle](https://github.com/975L/PaymentBundle) <br> `c975l/payment-bundle` | Generic basket/checkout engine and Stripe payments | Config, Ui |
+| <img src="images/BookBundle.svg" alt="" width="80"> | [BookBundle](https://github.com/975L/BookBundle) <br> `c975l/book-bundle` | Books and series catalog for a publishing site | Config, Ui |
+| <img src="images/GalleryBundle.svg" alt="" width="80"> | [GalleryBundle](https://github.com/975L/GalleryBundle) <br> `c975l/gallery-bundle` | Photo galleries — categories, batch upload, derivatives | Config, Ui |
+| <img src="images/SocialBundle.svg" alt="" width="80"> | [SocialBundle](https://github.com/975L/SocialBundle) <br> `c975l/social-bundle` | Social links and share buttons | Config, Ui |
 
 **ConfigBundle and UiBundle are the core pair** — they reference each other and are always installed
 together. Every other bundle sits on top of them. Installing any satellite bundle pulls the core in,

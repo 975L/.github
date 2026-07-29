@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 78" width="260" height="203">
+  
+  <g transform="translate(0,6)"><rect x="6" y="4" width="88" height="44" rx="8" fill="#26333F"></rect><g transform="translate(14,6)" fill="none" stroke="#F4E7CE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="9" width="24" height="22" rx="3"></rect><line x1="8" y1="15" x2="32" y2="15"></line><line x1="13" y1="21" x2="27" y2="21"></line><line x1="13" y1="26" x2="22" y2="26"></line></g><text x="70" y="32" font-family="&#39;IBM Plex Mono&#39;,monospace" font-size="17" font-weight="600" fill="#F4E7CE" text-anchor="middle" letter-spacing="1">UI</text></g>
+  <text x="50" y="74" font-family="&#39;Space Grotesk&#39;,sans-serif" font-size="12" text-anchor="middle" letter-spacing="-0.3"><tspan fill="#26333F" font-weight="700">Ui</tspan><tspan fill="#9A8F7C" font-weight="500">Bundle</tspan></text>
+</svg>
