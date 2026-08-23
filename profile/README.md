@@ -10,7 +10,7 @@ Maintained by [Laurent Marquet](https://github.com/LaurentMarquet) · PHP 8.4 ·
 
 | | Package | What it does |
 |---|---|---|
-| <img src="images/CoreBundle.svg" alt="" width="110"> | [CoreBundle](https://github.com/975L/CoreBundle) <br> `c975l/core-bundle` | The base of the ecosystem in a single package. **ConfigBundle** — database-backed application configuration (`site_config`), the shared `/management` dashboard, user accounts, health check, backup, sitemaps, redirects. **UiBundle** — composable page Blocks, media library and site graphics, admin-editable theme, cookie banner, legal documents, database-driven forms, email templates, shared CSS/JS. |
+| <img src="images/CoreBundle.svg" alt="" width="110"> | [CoreBundle](https://github.com/975L/CoreBundle) <br> `c975l/core-bundle` | The base of the ecosystem in a single package. **ConfigBundle** — database-backed application configuration (`site_config`), the shared `/management` dashboard, user accounts, health check, backup, sitemaps, redirects. **UiBundle** — composable page Blocks, media library and site graphics, admin-editable theme, cookie banner, legal documents, database-driven forms, email templates, reviews, ratings and favorites, shared CSS/JS. |
 
 One package, **two bundles**: `c975L\ConfigBundle\` and `c975L\UiBundle\` keep their own namespaces,
 services, configs, translation domains and dashboard sections — there is no `c975L\CoreBundle\`
@@ -26,11 +26,11 @@ involved). None of them rests on another.
 
 | | Bundle | What it does | Also requires |
 |---|---|---|---|
-| <img src="images/SiteBundle.svg" alt="" width="80"> | [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — full layout, database-driven pages, navbar and footer menus, collections, page templates, per-page SEO and health check | — |
-| <img src="images/ShopBundle.svg" alt="" width="80"> | [ShopBundle](https://github.com/975L/ShopBundle) <br> `c975l/shop-bundle` | E-commerce — product catalog with categories, media, downloadable files and affinity recommendations | Payment |
+| <img src="images/SiteBundle.svg" alt="" width="80"> | [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — full layout, database-driven pages, navbar and footer menus, collections, per-page SEO and health check | — |
+| <img src="images/ShopBundle.svg" alt="" width="80"> | [ShopBundle](https://github.com/975L/ShopBundle) <br> `c975l/shop-bundle` | E-commerce — product catalog with categories, media, downloadable files, gift cards, verified buyer reviews and affinity recommendations | Payment |
 | <img src="images/PaymentBundle.svg" alt="" width="80"> | [PaymentBundle](https://github.com/975L/PaymentBundle) <br> `c975l/payment-bundle` | Generic basket/checkout engine and Stripe payments; any bundle plugs its own sellable items in through `BasketItemProviderInterface` | — |
 | <img src="images/CrowdfundingBundle.svg" alt="" width="80"> | [CrowdfundingBundle](https://github.com/975L/CrowdfundingBundle) <br> `c975l/crowdfunding-bundle` | Crowdfunding campaigns — counterparts, contributors, news and media — plus an optional lottery tied to a campaign | Payment |
-| <img src="images/BookBundle.svg" alt="" width="80"> | [BookBundle](https://github.com/975L/BookBundle) <br> `c975l/book-bundle` | A publisher's catalog of books and series, with media, video, press and marketing collections | — |
+| <img src="images/BookBundle.svg" alt="" width="80"> | [BookBundle](https://github.com/975L/BookBundle) <br> `c975l/book-bundle` | A publisher's catalog of books, series and strips, with media, video, press and marketing collections, short links and reader reviews | — |
 | <img src="images/GalleryBundle.svg" alt="" width="80"> | [GalleryBundle](https://github.com/975L/GalleryBundle) <br> `c975l/gallery-bundle` | Photo galleries — categories, batch upload, automatic derivatives, public viewer | — |
 | <img src="images/SocialBundle.svg" alt="" width="80"> | [SocialBundle](https://github.com/975L/SocialBundle) <br> `c975l/social-bundle` | Social links managed in one place and share buttons for 15 networks | — |
 
