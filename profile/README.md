@@ -10,7 +10,7 @@ Maintained by [Laurent Marquet](https://github.com/LaurentMarquet) · PHP 8.4 ·
 
 | | Package | What it does |
 |---|---|---|
-| <img src="images/CoreBundle.svg" alt="" width="110"> | [CoreBundle](https://github.com/975L/CoreBundle) <br> `c975l/core-bundle` | The base of the ecosystem in a single package. **ConfigBundle** — database-backed application configuration (`site_config`), the shared `/management` dashboard, user accounts, health check, backup, sitemaps, redirects. **UiBundle** — composable page Blocks, media library and site graphics, admin-editable theme, cookie banner, legal documents, database-driven forms, email templates, reviews, ratings and favorites, shared CSS/JS. Both contribute the **guided tour** — built on its own from whatever menus are installed — and the **guided projects** that walk an admin through a real task, screen by screen. |
+| <img src="images/CoreBundle.svg" alt="" width="110"> | [CoreBundle](https://github.com/975L/CoreBundle) <br> `c975l/core-bundle` | The base of the ecosystem in a single package. **ConfigBundle** — database-backed application configuration (`site_config`), the shared `/management` dashboard, user accounts, health check, backup, sitemaps, redirects. **UiBundle** — composable page Blocks, media library and site graphics, admin-editable theme, cookie banner, legal documents, database-driven forms, email templates, reviews, ratings and favorites, shared CSS/JS. Both contribute the **guided tour** — built on its own from whatever menus are installed — and the **guided projects** that walk an admin through a real task, screen by screen. A site naming more than one language gets **content translations** too: a text is said again in another language beside the one it was written in, never in place of it. |
 
 One package, **two bundles**: `c975L\ConfigBundle\` and `c975L\UiBundle\` keep their own namespaces,
 services, configs, translation domains and dashboard sections — there is no `c975L\CoreBundle\`
@@ -26,7 +26,7 @@ involved). None of them rests on another.
 
 | | Bundle | What it does | Also requires |
 |---|---|---|---|
-| <img src="images/SiteBundle.svg" alt="" width="80"> | [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — full layout, database-driven pages, navbar and footer menus, collections, per-page SEO and health check | — |
+| <img src="images/SiteBundle.svg" alt="" width="80"> | [SiteBundle](https://github.com/975L/SiteBundle) <br> `c975l/site-bundle` | Website foundation — full layout, database-driven pages, navbar and footer menus, collections, per-page SEO and health check, and a site said in several languages: locale-prefixed urls, a Translate screen per page and per menu, `hreflang` in the head and in the sitemap | — |
 | <img src="images/ShopBundle.svg" alt="" width="80"> | [ShopBundle](https://github.com/975L/ShopBundle) <br> `c975l/shop-bundle` | E-commerce — product catalog with categories, media, downloadable files, shipping weights, verified buyer reviews and affinity recommendations | Payment |
 | <img src="images/PaymentBundle.svg" alt="" width="80"> | [PaymentBundle](https://github.com/975L/PaymentBundle) <br> `c975l/payment-bundle` | Generic basket/checkout engine, Stripe and Revolut payments, promotional codes and gift cards, invoices and a delivery grid of zones and weight tiers; any bundle plugs its own sellable items in through `BasketItemProviderInterface` | — |
 | <img src="images/CrowdfundingBundle.svg" alt="" width="80"> | [CrowdfundingBundle](https://github.com/975L/CrowdfundingBundle) <br> `c975l/crowdfunding-bundle` | Crowdfunding campaigns — counterparts, contributors, news and media — plus an optional lottery tied to a campaign | Payment |
@@ -66,6 +66,7 @@ Want to see it running? [bundles.975l.com](https://bundles.975l.com) presents ev
 ## Conventions
 
 - Application configuration lives in the database, edited in EasyAdmin — never in `.env`
+- The one exception: the languages a site speaks are declared in Symfony's own `enabled_locales`, which the framework itself reads
 - A bundle contributes to the dashboard by implementing an interface; no compiler pass to write
 - Assets are served through AssetMapper — no npm, no Node, no build step
 - Admin controllers live in `Controller/Management/`
