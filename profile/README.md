@@ -42,14 +42,37 @@ complete site on its own: it has a page shell, the theme, its favicon and share 
 banner, the legal documents, accounts, redirects and the health check. SiteBundle is what adds
 *pages* — a composable page tree, menus, collections and their own SEO — not what makes a site work.
 
+## Every bundle speaks several languages
+
+Two layers, never mixed up.
+
+**The interface** — back-office, public screens, emails, guided projects — ships in English, French and
+Spanish in every bundle, and each bundle's test suite compares every language file with the one it is
+written in, so a key added without its translations fails. Adding a language is adding its files.
+
+**The content** is translated as soon as a site names more than one language in Symfony's own
+`enabled_locales`. A page, a menu, a collection item, a product and its category, a book, a serie and
+its characters, a gallery and its photographs, a print format, a campaign and its tiers: each keeps one
+row, one structure and one slug, and only its texts are said again — on the very same edit screen opened
+in another language, beside the original, never in place of it. Then:
+
+- the writing language keeps its bare urls, and every other one answers under `/{_locale}/…`
+- a page carries `hreflang` in its head, and every bundle's sitemap declares its screens once per language with their `alternates`
+- links stored in blocks and menus follow the language being read, and never lead to a 404
+- a deleted row takes its translations away, and a duplicated page, book or product carries them
+- a demo site is seeded in every language it declares
+
+A site declaring one language — every site until it says otherwise — is untouched by all of it.
+
 ## The back-office explains itself
 
 Two things come with the core and grow with every bundle installed. A **guided tour** is built on its
 own from the menus the installed bundles declare — no bundle writes it, none can forget an entry.
-And **62 guided projects** take an admin through a real task, step by step, highlighting the very
-button or field to use where it already is: 12 in BookBundle, 10 in UiBundle, 9 each in PaymentBundle
-and SiteBundle, 7 in GalleryBundle, 6 in ShopBundle, 5 in ConfigBundle, 4 in SocialBundle. A bundle
-contributes its own by implementing `GuidedProjectProviderInterface`.
+And **83 guided projects** take an admin through a real task, step by step, highlighting the very
+button or field to use where it already is: 16 in BookBundle, 11 in SiteBundle, 10 each in UiBundle,
+GalleryBundle and CrowdfundingBundle, 9 in PaymentBundle, 8 in ShopBundle, 5 in ConfigBundle, 4 in
+SocialBundle — translating a page, a menu, a book, a gallery, a product or a campaign among them. A
+bundle contributes its own by implementing `GuidedProjectProviderInterface`.
 
 ## Start here
 
