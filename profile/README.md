@@ -30,6 +30,7 @@ involved). None of them rests on another.
 | <img src="images/ShopBundle.svg" alt="" width="80"> | [ShopBundle](https://github.com/975L/ShopBundle) <br> `c975l/shop-bundle` | E-commerce — product catalog with categories, media, downloadable files, shipping weights, verified buyer reviews and affinity recommendations | Payment |
 | <img src="images/PaymentBundle.svg" alt="" width="80"> | [PaymentBundle](https://github.com/975L/PaymentBundle) <br> `c975l/payment-bundle` | Generic basket/checkout engine, Stripe and Revolut payments, promotional codes and gift cards, invoices and a delivery grid of zones and weight tiers; any bundle plugs its own sellable items in through `BasketItemProviderInterface` | — |
 | <img src="images/CrowdfundingBundle.svg" alt="" width="80"> | [CrowdfundingBundle](https://github.com/975L/CrowdfundingBundle) <br> `c975l/crowdfunding-bundle` | Crowdfunding campaigns — counterparts, contributors, news and media — plus an optional lottery tied to a campaign | Payment |
+| <img src="images/PurchaseCreditsBundle.svg" alt="" width="80"> | [PurchaseCreditsBundle](https://github.com/975L/PurchaseCreditsBundle) <br> `c975l/purchasecredits-bundle` | Prepaid credits — credit packs sold through the basket, a per-user ledger whose sum is the balance, and a spending API the site's own services call | Payment |
 | <img src="images/BookBundle.svg" alt="" width="80"> | [BookBundle](https://github.com/975L/BookBundle) <br> `c975l/book-bundle` | A publisher's catalog of books, series and strips, with authors and illustrators as catalog entries of their own, successive versions of a text, media, video, press and marketing collections, short links and reader reviews | — |
 | <img src="images/GalleryBundle.svg" alt="" width="80"> | [GalleryBundle](https://github.com/975L/GalleryBundle) <br> `c975l/gallery-bundle` | Photo galleries — categories, batch upload, automatic derivatives, public viewer, and photographs sold as prints: a catalogue of sizes and prices, limited editions with their register and certificate, printed and shipped by a lab | Payment |
 | <img src="images/SocialBundle.svg" alt="" width="80"> | [SocialBundle](https://github.com/975L/SocialBundle) <br> `c975l/social-bundle` | Social links managed in one place and share buttons for 15 networks | — |
@@ -101,5 +102,4 @@ Want to see it running? [bundles.975l.com](https://bundles.975l.com) presents ev
 Bundles marked archived on this page are no longer maintained. Notably, `ShareButtonsBundle` and
 `ContactFormBundle` have been superseded — share buttons moved to
 [SocialBundle](https://github.com/975L/SocialBundle), contact forms to the core's database-driven
-form system. `PurchaseCreditsBundle` predates the current architecture and is kept for existing
-sites only.
+form system.
